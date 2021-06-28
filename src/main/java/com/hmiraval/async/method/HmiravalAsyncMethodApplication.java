@@ -20,8 +20,8 @@ public class HmiravalAsyncMethodApplication {
 		
 		//Establecer el threadpool para ejecutar cada proceso asincrono
 		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-		executor.setCorePoolSize(3);//minimo 2 hilos
-		executor.setMaxPoolSize(3);//maximo 2 hilos
+		executor.setCorePoolSize(2);//minimo 2 hilos
+		executor.setMaxPoolSize(2);//maximo 2 hilos
 		executor.setQueueCapacity(100);//
 		executor.setThreadNamePrefix("Async-");//prefijo async obligatorio
 		return executor;
